@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        .header {
+            background-color: #3CB371;
+            color: #ffffff;
+            padding: 15px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #228B22;
+            color: #ffffff;
+            box-shadow: 0 1px 2px rgba(0, 43, 0, 0.3);
+        }
+        .menu li:hover {
+            background-color: #ADFF2F;
+        }
+        .aside {
+            background-color: #228B22;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 2px rgba(0, 43, 0, 0.3);
+        }
+        .footer {
+            background-color: #228B22;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+        /* Desktop: */
+        .col-3 {width: 25%;}
+        .col-6 {width: 50%;}
+
+
+        @media only screen and (max-width: 768px) {
+            /* Mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Lorem ipsum dolor sit.</h1>
+</div>
+
+<div class="row">
+
+    <div class="col-3 menu">
+        <ul>
+            <li>Lorem ipsum1.</li>
+            <li>Lorem ipsum2.</li>
+            <li>Lorem ipsum3.</li>
+            <li>Lorem ipsum4.</li>
+        </ul>
+    </div>
+
+    <div class="col-6">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt mauris et augue pharetra, eu lobortis enim porttitor. Pellentesque fringilla, tortor ut vehicula venenatis, purus sem volutpat lacus, nec dapibus risus dui quis libero. Fusce quis lacinia orci, nec maximus turpis. Suspendisse fermentum ex quis odio varius ultrices. Vivamus vulputate dolor mauris, ut auctor massa hendrerit et. Aenean porttitor vestibulum tortor. Nulla facilisi. Cras consequat libero augue, eu faucibus lacus aliquet id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent elementum mauris non ipsum pulvinar suscipit. Nam id felis in arcu tincidunt ullamcorper et ut eros. Sed sollicitudin interdum mattis. Sed rhoncus, urna in pellentesque porttitor, enim nunc malesuada risus, a hendrerit mauris est ac mauris. Sed mollis neque in cursus aliquet. Sed scelerisque eros orci, ut commodo urna suscipit ac.</p>
+    </div>
+
+    <div class="col-3 right">
+        <div class="aside">
+            <h2>Lorem?</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <h2>Ipsum?</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <h2>Dolor?</h2>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Lorem ipsum dolor sit amet augue. Nam turpis semper urna.</p>
+</div>
+
+</body>
+</html>
